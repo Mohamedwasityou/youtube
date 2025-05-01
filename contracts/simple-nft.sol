@@ -21,7 +21,7 @@ contract NFT is ERC721, Ownable {
     string public baseExtension = ".json";
 
     constructor() ERC721("NFT Name", "SYMBOL") {
-        baseUri = "ipfs://xxxxxxxxxxxxxxxxxxxxxxxxxxxxx/";
+        baseUri = "ipfs://bafybeiddwuxl6y3z4ugyw3rxcuosglslxvdnyqn7n7sm6g4g57qsixsfm4/";
         for(uint256 i = 1; i <= TOKENS_RESERVED; ++i) {
             _safeMint(msg.sender, i);
         }
